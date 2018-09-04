@@ -1,0 +1,26 @@
+<div *ngIf="currentBook">
+<li>title:         {{currentBook.title}}</li>
+<li>subtitle:      {{currentBook.subtitle}}</li>
+<div *ngIf="currentBook.authors">
+<ul *ngFor="let author of currentBook.authors;let i=index">
+<li>author {{i+1}}:  {{author}}</li>
+</ul>
+</div>
+
+<div *ngIf="currentBook.imageLinks">
+<img *ngIf="currentBook.imageLinks.smallThumbnail" [src]='currentBook.imageLinks.smallThumbnail'>
+<img *ngIf="currentBook.imageLinks.thumbnail" [src]='currentBook.imageLinks.thumbnail'>
+</div>
+<ul> 
+<br/>     
+<br/>language: <div *ngIf="currentBook.language; else noKnown"><li>      {{currentBook.language}}</li></div>
+<br/>pageCount:<div *ngIf="currentBook.pageCount; else noKnown"><li>      {{currentBook.pageCount}}</li>    </div>
+<br/>publishedDate:<div *ngIf="currentBook.publishedDate; else noKnown"><li>  {{currentBook.publishedDate}}</li></div>0
+<br/>publisher:  <div *ngIf="currentBook.publisher; else noKnown"><li>    {{currentBook.publisher}}</li></div>
+</ul>
+ 
+<button type="button" (click)="addCustomerCart()"  [disabled]="!customer">  <span class="glyphicon glyphicon-shopping-cart"></span> add to my Cart</button>
+<button type="button" (click)="backProductsPage()">back to all Products</button> <ng-template #noKnown>
+          No saved information
+      </ng-template>
+ </div>

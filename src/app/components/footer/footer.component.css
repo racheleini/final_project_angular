@@ -1,0 +1,16 @@
+ div{
+    background-color: #ed2553;
+    height: 5vh;
+    width: 100vw; 
+position: fixed;
+left: 0;
+right: 0;
+bottom: 0;
+}
+p{   
+    margin-left: 25vw;
+    width: 50vw; 
+    position: absolute;
+    bottom: 0vh;
+    color: white;
+}
