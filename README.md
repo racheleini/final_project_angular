@@ -13,15 +13,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Run this app in dev mode- client side:
 ```bash
-clone 'https://github.com/racheleini/final_project_angular'
-cd bookStore
+git clone 'https://github.com/racheleini/final_project_angular'
+cd final_project_angular/update-final
 npm i
 ng serve --open
 ```
 ## Run this app in dev mode- server side:
 ```bash
-clone 'https://github.com/racheleini/final_project_angular'
-cd bookStore-frontend
+git clone 'https://github.com/racheleini/final_project_angular'
+cd final_project_angular/server
 npm i
 npm start
 ```
