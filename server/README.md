@@ -1,5 +1,5 @@
-# demo server from postman
-** http://localhost:3500/api/existCurrentCustomerLogin
+# demo sent for postman
+ http://localhost:3500/api/existCurrentCustomerLogin
 ```bash
 {
 	"firstName":"rachel chaya",
@@ -7,8 +7,4 @@
 	"userName":"rc",
 	"password":"6456555"
 }
-```
-# needed for run :
-```bash
-   npm i
 ```
