@@ -17,11 +17,11 @@ body{
   height: 20px;
   border-radius: 5px;
   outline: none;
-  color: #9DBFAF;
+  color: #ed2553;
 }
 
 .searchTerm:focus{
-  color: #00B4CC;
+  color: #ed2553;
 }
 
 .searchButton {

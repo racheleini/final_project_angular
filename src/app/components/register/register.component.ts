@@ -18,9 +18,9 @@ export class RegisterComponent{
 
 constructor(private customerService:CustomerService,private router:Router) {
   let formGroupConfig = {
-    firstName: new FormControl("", this.createValidatorArr("name", 2, 15,/^[A-Za-z]+$/)),
-    lastName: new FormControl("", this.createValidatorArr("name", 2, 15,/^[A-Za-z]+$/)),
-    userName: new FormControl("", this.createValidatorArr("name", 3, 15,/^[A-Za-z]+$/)),
+    firstName: new FormControl("", this.createValidatorArr("name", 2, 15,/^[A-Za-z ]+$/)),
+    lastName: new FormControl("", this.createValidatorArr("name", 2, 15,/^[A-Za-z ]+$/)),
+    userName: new FormControl("", this.createValidatorArr("name", 3, 15,/^[A-Za-z ]+$/)),
     password: new FormControl("", this.createValidatorArr("password", 5, 10))
   };
 

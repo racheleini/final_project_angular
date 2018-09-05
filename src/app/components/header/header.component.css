@@ -1,15 +1,16 @@
 .gb_9a {
-    background-size: 32px 32px;
-    border-radius: 50%;
-    display: block;
-    overflow: hidden;
-    height: 32px;
-    width: 32px;
-    z-index: 0;
-    background-color: white;
-    position: relative;
-    top: 1vh;
-    right: 4vw;
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+  z-index: 0;
+  background-color: white;
+  position: relative;
+  top: 1vh;
+  right: 4vw;
+  font-size: 1.5em;
+  color: #ed2553;
 }
   /*.gbii::before {
    content: url(https://lh3.googleusercontent.com/-IqymtnR1Jyo/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaMvg0owtNBXNrKi15qIssGIRFUO7g
@@ -19,56 +20,13 @@
 div{
     background-color: aqua;
 }
+h1{
+  font-size: 2em;
+}
 
 
-@import url(https://reset5.googlecode.com/hg/reset.min.css);
-@font-face {
-  font-family: 'Nixie One';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Nixie One'), local('NixieOne-Regular'), url(https://fonts.gstatic.com/s/nixieone/v8/lW-8wjkKLXjg5y2o2uUYV-t3.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: italic;
-  font-weight: 700;
-  src: local('Open Sans Bold Italic'), local('OpenSans-BoldItalic'), url(https://fonts.gstatic.com/s/opensans/v15/memnYaGs126MiZpBA-UFUKWiUNhrIqY.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v15/mem8YaGs126MiZpBA-UFVZ0e.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v15/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-style: italic;
-  font-weight: 300;
-  src: local('Open Sans Condensed Light Italic'), local('OpenSansCondensed-LightItalic'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NHdQDnbTkabZAIOl9il_O6KJj73e7Fd_-7suD8Rb2Q.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Open Sans Condensed Light'), local('OpenSansCondensed-Light'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff1GhDuXMQg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Open Sans Condensed';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Open Sans Condensed Bold'), local('OpenSansCondensed-Bold'), url(https://fonts.gstatic.com/s/opensanscondensed/v12/z7NFdQDnbTkabZAIOl9il_O6KJj73e7Ff0GmDuXMQg.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Slabo 13px';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Slabo 13px'), local('Slabo13px-Regular'), url(https://fonts.gstatic.com/s/slabo13px/v4/11hEGp_azEvXZUdSBzzRQKCh3w.ttf) format('truetype');
+.font{
+  font-family: 'PT Serif', serif;
 }
 header,
 nav,
@@ -78,10 +36,23 @@ div {
 }
 .header {
   padding: 20px 0;
-  background: #fff;
   font: normal 2em / normal 'Nixie One', serif;
   color: #ed2553;
+  font-size: 4em;
+  text-shadow: 2px 2px white;
   text-align: center;
+}
+
+#header-bg{
+   width: 100%;
+  height: 25vh;
+  background: url(../../../assets/images/header-bg.jpg) no-repeat top;
+  background-size: 100vw 25vh;
+}
+.center {
+  width: 990px;
+  margin: 0 auto;
+  clear: both;
 }
 nav {
   margin: 0;
@@ -90,9 +61,7 @@ nav {
   overflow: hidden;
 }
 nav ul {
-  list-style: none;
   text-align: center;
-  overflow: hidden;
 }
 nav ul li {
   display: inline-block;
@@ -110,28 +79,4 @@ nav ul li a:hover,
 nav ul li a.active {
   background: #343434;
 }
-section {
-  padding: 20px;
-  height: 500px;
-  font: normal 2em / normal 'Open Sans Condensed', sans-serif;
-}
-section#section1,
-section#section3 {
-  background: #343434;
-  color: #eee;
-}
-section#section2,
-section#section4 {
-  background: #666;
-  color: #eee;
-}
-h1 {
-  font-size: 2em;
-}
-footer {
-  padding: 20px;
-  background: #ed2553;
-  font: normal 1em 'Open Sans Condensed', sans-serif;
-  color: #fff;
-  text-align: center;
-}
+

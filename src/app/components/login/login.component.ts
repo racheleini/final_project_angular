@@ -1,8 +1,7 @@
 import { Component } from '@angular/core';
 import { Customer } from '../../shared/models/customer.model';
-import { FormBuilder, FormGroup, Validators, FormControl, ValidatorFn } from '@angular/forms';
+import { FormGroup,  FormControl, ValidatorFn } from '@angular/forms';
 import { CustomerService } from '../../shared/services/customer.service';
-import { Router } from '../../../../node_modules/@angular/router';
 
 
 @Component({
@@ -14,9 +13,9 @@ export class LoginComponent {
   formGroup: FormGroup;
   obj: typeof Object = Object;
   currentCustomer: Customer;
-  constructor(private customerService: CustomerService, private router: Router) {
+  constructor(private customerService: CustomerService) {
     let formGroupConfig = {
-      userName: new FormControl("", this.createValidatorArr("name", 3, 15, /^[A-Za-z]+$/)),
+      userName: new FormControl("", this.createValidatorArr("name", 3, 15, /^[A-Za-z ]+$/)),
       password: new FormControl("", this.createValidatorArr("password", 5, 10))
     };
 
@@ -33,7 +32,7 @@ export class LoginComponent {
   submitLoginSave() {
     this.currentCustomer  = this.formGroup.value;
     this.customerService.loginCustomerValid(this.currentCustomer);
-    this.router.navigate(['/home']);
+    
   }
 }
 

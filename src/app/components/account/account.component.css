@@ -1,0 +1,26 @@
+nav{
+    margin: 2vh 0vw;
+    padding: 0;
+    background: #ed2553;
+    overflow: hidden;
+    text-align: center;
+}
+nav ul {
+    text-align: center;
+  }
+  nav ul li {
+    display: inline-block;
+    margin: 0 -4px;
+    padding: 5px 0;
+  }
+  nav ul li a {
+    padding: 5px 20px;
+    font: normal 1em / normal 'Open Sans Condensed', sans-serif;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: #343434;
+  }

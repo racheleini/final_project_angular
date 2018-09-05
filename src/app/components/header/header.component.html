@@ -1,41 +1,27 @@
-<div class="header">
-  <h1>Books Store</h1>
+
+<div id="header-bg" class="hidden-xs header center">
+    <h1>Books Store</h1>
+  
+
+
 </div>
 
 <nav>
 
-  <ul>
+  <ul class="font">
     <li *ngIf="currentCustomer; else iconDefault"><span class="gb_9a gbii">{{currentCustomer.firstName.substring(0,2)}}</span>
       </li>
     <ng-template #iconDefault>
       <li>
-      <span class="gb_9a gbii">????</span>
+      <span class="gb_9a gbii">??</span>
     </li>
     </ng-template>
     <li *ngIf="currentCustomer; else customerDefault"> Hello {{currentCustomer.firstName}}!</li>
     <ng-template #customerDefault>
      <li> Hello guest!</li>
     </ng-template>
-    <li> <a [routerLink]="['/account']"> my account</a></li>
-    <li><a [routerLink]="['/products']">my products </a></li>
+    <li> <a class="font" [routerLink]="['/account']"> my account</a></li>
+    <li><a class="font" [routerLink]="['/products']">my products </a></li>
     <li *ngIf="currentCustomer"><a [routerLink]="['/cart']">my cart </a></li>
   </ul>
 </nav>
-
-<!-- <div *ngIf="currentCustomer; else iconDefault">
- <span class="gb_9a gbii">{{currentCustomer.firstName.substring(0,2)}}</span> 
- </div>
- <ng-template #iconDefault>
- <span class="gb_9a gbii">????</span> 
- </ng-template>
-
-<div *ngIf="currentCustomer; else customerDefault">
-  <p> Hello {{currentCustomer.firstName}}!</p>
- </div>
- <ng-template #customerDefault>
-   Hello guest!
- </ng-template>
- <br/>
- <button type="button" id="btnAccount" ><a [routerLink]="['/account']"> my account</a></button>
-<button type="button" id="btnProducts" ><a [routerLink]="['/products']">my products </a></button>
-<button *ngIf="currentCustomer" type="button" id="btnCart"><a [routerLink]="['/cart']">my cart </a></button> -->
