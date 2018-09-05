@@ -8,3 +8,7 @@
 	"password":"6456555"
 }
 ```
+# needed for run :
+```bash
+   npm i
+```
