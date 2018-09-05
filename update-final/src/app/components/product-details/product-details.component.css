@@ -1,7 +1,5 @@
 button{
-  position: fixed;
-  top: 35vh;
-  right: 50vw;
+height: 5vh;
 }
 .component{
   position: fixed;
@@ -13,8 +11,9 @@ button{
     height: 18vh;
 }
 img {
-    height: 8vw;
-    width: auto;
+  position: relative;
+  width: 160px;
+  height: 220px;
     display: inline;
   }
  /*

@@ -20,9 +20,10 @@ html, body {
   background-image: repeating-linear-gradient(45deg,#ed2553,#ed2553 100px,white 100px, #865127 200px);
   columns: #111111;;
   box-shadow: 0 0 0 0.5em rgba(255, 255, 255, 0.25) inset;
+  height: 17vh;
 }
 .header h1 {
-  font-size: 4em;
+  font-size: 2em;
 }
 .header p {
   font-size: 1.2em;
@@ -54,7 +55,7 @@ html, body {
 .cart .product {
   position: relative;
   width: 200px;
-  height: 280px;
+  height: 54vh;
   float: left;
 }
 .cart .product:hover {
@@ -252,16 +253,14 @@ html, body {
 }
 /* #ed2553 */
 .glyphicon1 {
-  font-size: 421%;
+    font-size: 2em;
     position: relative;
-    top: 2em;
-    left: 6vh;
+    top: -2em;
+    left: 2vh;
     font-family: 'Glyphicons Halflings';
     font-style: normal;
 }
-.glyphicon-trash:before {
-  content: "\e020";
-}
+
 a{
   color: white;
 }

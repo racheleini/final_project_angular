@@ -1,12 +1,8 @@
-.
-.warpImg{
-    width: 20vw;
-    height: 18vh;
-}
+
+
 img {
-    height: 8vw;
-    width: auto;
-    display: inline;
+  height: 30vh;
+  width: auto;
   }
   
   #main {
@@ -30,6 +26,18 @@ img {
       padding-left: 1em;
     }
   }
+  
+.book {
+	position: relative;
+	width: 160px; 
+	height: 220px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
   #main .card .book-info {
     padding-top: 1em;
     padding-right: 1em;
@@ -149,13 +157,12 @@ img {
     font-size: 20px;
   }
 .glyphicon1 {
-    font-size: 2vw;
-    position: relative;
-    top: 0vh;
-    right: 1vw;
-    font-family: 'Glyphicons Halflings';
-    font-style: normal;
-    -moz-osx-font-smoothing: grayscale;
+  font-size: 211%;
+  position: relative;
+  top: 0vh;
+  right: 0vw;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
 }
 .glyphicon-trash:before {
     content: "\e020";
@@ -193,7 +200,7 @@ html, body {
 
 .cart-container {
   width: 100%;
-  height: 280px;
+
   display: table;
 }
 .cart-container .empty {
@@ -203,38 +210,19 @@ html, body {
   display: table-cell;
   vertical-align: middle;
 }
-
-.cart {
-  list-style: none;
-  height: 280px;
-  width: 10000px;
-  cursor: grab;
-  position: relative;
-  left: 0;
-  transform: translate3d(0, 0, 0);
-}
-.cart .product {
-  position: relative;
-  width: 200px;
-  height: 280px;
-  float: left;
-}
 .cart .product:hover {
   z-index: 1;
 }
-.cart .product:nth-child(3n+1) .product-preview, .cart .product:nth-child(3n+1) .product-interactions {
-  background: #E8B0AF;
-}
-.cart .product:nth-child(3n+2) .product-preview, .cart .product:nth-child(3n+2) .product-interactions {
-  background: #FDDAC4;
-}
-.cart .product:nth-child(3n) .product-preview, .cart .product:nth-child(3n) .product-interactions {
-  background: #F1D5A5;
-}
-.cart .product .product-preview {
-  padding: 1em;
-  height: 280px;
-  position: relative;
+
+.thumbnail{
+  display: block;
+    padding: 4px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    -webkit-transition: border .2s ease-in-out;
+    -o-transition: border .2s ease-in-out;
+    transition: border .2s ease-in-out;
 }
 .cart .product .product-preview .thumbnail {
   width: 100%;
