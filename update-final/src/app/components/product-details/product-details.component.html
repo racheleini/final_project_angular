@@ -1,0 +1,34 @@
+
+
+
+<div *ngIf="currentBook">
+    <div class="product-preview">
+        <div class="thumbnail warpImg">
+            <img class="image" *ngIf="currentBook.imageLinks?currentBook.imageLinks.thumbnail:null" [src]='currentBook.imageLinks.thumbnail'>
+        </div>
+        <div class="product-paper">
+            <div *ngIf="currentBook.title" class="product-name">
+                {{currentBook.title}}
+            </div>
+            <div *ngIf="currentBook.subtitle" class="product-price">
+                {{currentBook.subtitle}}
+            </div>
+            <div *ngIf="currentBook.language" class="product-name">
+                {{currentBook.language}}
+            </div>
+            <div *ngIf="currentBook.pageCount" class="product-price">
+                {{currentBook.pageCount}}
+            </div>
+            <div *ngIf="currentBook.publishedDate" class="product-name">
+                    {{currentBook.publishedDate}}
+            </div>
+            <div *ngIf="currentBook.publisher" class="product-name">
+                    {{currentBook.publisher}}
+            </div>
+        </div>
+        <button type="button" (click)="addCustomerCart()" [disabled]="!customer"> <span class="glyphicon glyphicon-shopping-cart"></span>
+            add to my Cart</button>
+        <button type="button" (click)="backProductsPage()">back to all Products</button>
+    </div>
+
+</div>

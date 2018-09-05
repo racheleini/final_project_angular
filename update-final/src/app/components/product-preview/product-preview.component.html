@@ -1,0 +1,10 @@
+<div *ngIf="currentBook.title||currentBook.subtitle" class="item-thumbs">
+        <div *ngIf="currentBook.imageLinks">
+                <img *ngIf="currentBook.imageLinks.smallThumbnail" [src]='currentBook.imageLinks.smallThumbnail'>
+                </div>
+    <div class="hover-content">    
+    <h4 *ngIf="currentBook.title">book title:        {{currentBook.title}}</h4>
+    <p *ngIf="currentBook.subtitle">book sub title:  {{currentBook.subtitle}}</p>
+    <button value="book details" (click)="viewBookDetails()">view details</button>
+  </div> 
+   </div>

@@ -1,0 +1,14 @@
+ <div class="wrap">
+    <div class="search">
+       <input type="text" class="searchTerm" placeholder="Which books are you looking for?" (keyup)="searchBooks($event.target.value)" [(ngModel)]="search"> 
+    </div>
+ </div>
+
+
+ <div *ngIf="currentBooksList">
+     <div *ngFor="let bookTemplate of currentBooksList">
+    <app-product-preview [currentBook]="bookTemplate.volumeInfo"> </app-product-preview>
+ </div>
+</div>
+
+

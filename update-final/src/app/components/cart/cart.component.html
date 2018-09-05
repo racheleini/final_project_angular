@@ -1,0 +1,31 @@
+  
+<i class="icon-size"  (click)="clearAllCartCustomer()" title="deleate all cart">
+    <span class="glyphicon1 glyphicon-trash icon-size"></span>
+</i>
+
+<div class="header">
+  <h1>
+    Your cart
+  </h1>
+  <p>
+    ― The whole world of books in your palm
+  </p>
+</div>
+<div class="cart-container">
+  <div class="empty" style="display:none">
+    No more books to show !
+  </div>
+<div *ngIf="currentBooksList">
+  <ul class="cart">
+    <li *ngFor="let bookTemplate of currentBooksList" class="product" data-price="4.9" data-quantity="2">
+        <app-cart-product [currentBook]="bookTemplate"> </app-cart-product>
+    </li>
+  </ul>
+</div>
+
+
+<div class="actions">
+  <div class="big-button return">
+      <a [routerLink]="['/front-end-books-store/products']"> Return to shop </a>
+  </div>
+</div>

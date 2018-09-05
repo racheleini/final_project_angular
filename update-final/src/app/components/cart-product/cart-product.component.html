@@ -1,0 +1,21 @@
+<div *ngIf="currentBook">
+<div class="product-preview">
+    <div class="thumbnail warpImg">
+      <img class="image" *ngIf="currentBook.imageLinks?currentBook.imageLinks.thumbnail:null" [src]='currentBook.imageLinks.thumbnail'> 
+    </div>
+    <div class="product-paper">
+      <div *ngIf="currentBook.title" class="product-name">
+       {{currentBook.title}}
+      </div>
+      <div *ngIf="currentBook.subtitle" class="product-price">
+       {{currentBook.subtitle}}
+      </div>
+    </div>
+  </div> 
+
+</div>
+
+
+  
+
+

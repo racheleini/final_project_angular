@@ -1,0 +1,82 @@
+.gb_9a {
+  border-radius: 50%;
+  display: block;
+  overflow: hidden;
+  height: 32px;
+  width: 32px;
+  z-index: 0;
+  background-color: white;
+  position: relative;
+  top: 1vh;
+  right: 4vw;
+  font-size: 1.5em;
+  color: #ed2553;
+}
+  /*.gbii::before {
+   content: url(https://lh3.googleusercontent.com/-IqymtnR1Jyo/AAAAAAAAAAI/AAAAAAAAAAA/APUIFaMvg0owtNBXNrKi15qIssGIRFUO7g
+   /s32-c-mo/photo.jpg);
+  
+} */
+div{
+    background-color: aqua;
+}
+h1{
+  font-size: 2em;
+}
+
+
+.font{
+  font-family: 'PT Serif', serif;
+}
+header,
+nav,
+footer,
+div {
+  width: 100%;
+}
+.header {
+  padding: 20px 0;
+  font: normal 2em / normal 'Nixie One', serif;
+  color: #ed2553;
+  font-size: 4em;
+  text-shadow: 2px 2px white;
+  text-align: center;
+}
+
+#header-bg{
+   width: 100%;
+  height: 19vh;
+  background: url(../../../assets/images/header-bg.jpg) no-repeat top;
+  background-size: 100vw 22vh;
+}
+.center {
+  width: 990px;
+  margin: 0 auto;
+  clear: both;
+}
+nav {
+  margin: 0;
+  padding: 0;
+  background: #ed2553;
+  overflow: hidden;
+}
+nav ul {
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 -4px;
+  padding: 5px 0;
+}
+nav ul li a {
+  padding: 5px 20px;
+  font: normal 1em / normal 'Open Sans Condensed', sans-serif;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background: #343434;
+}
+

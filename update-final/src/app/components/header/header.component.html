@@ -1,0 +1,27 @@
+
+<div id="header-bg" class="hidden-xs header center">
+    <h1>Books Store</h1>
+  
+
+
+</div>
+
+<nav>
+
+  <ul class="font">
+    <li *ngIf="currentCustomer; else iconDefault"><span class="gb_9a gbii">{{currentCustomer.firstName.substring(0,2)}}</span>
+      </li>
+    <ng-template #iconDefault>
+      <li>
+      <span class="gb_9a gbii">??</span>
+    </li>
+    </ng-template>
+    <li *ngIf="currentCustomer; else customerDefault"> Hello {{currentCustomer.firstName}}!</li>
+    <ng-template #customerDefault>
+     <li> Hello guest!</li>
+    </ng-template>
+    <li> <a class="font" [routerLink]="['/front-end-books-store/account']"> my account</a></li>
+    <li><a class="font" [routerLink]="['/front-end-books-store/products']">my products </a></li>
+    <li *ngIf="currentCustomer"><a [routerLink]="['/front-end-books-store/cart']">my cart </a></li>
+  </ul>
+</nav>
