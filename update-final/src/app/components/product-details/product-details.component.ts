@@ -16,14 +16,13 @@ export class ProductDetailsComponent implements OnInit {
   customer: Customer;
   constructor(private route: ActivatedRoute, public booksStoreService: BooksStoreService,
     public customerService: CustomerService, public router: Router) {
-    this.customer = this.customerService.isAnExistingCustomer();
     this.currentBook = this.booksStoreService.valumeInfroBook;
     
   }
 
   ngOnInit() {
     this.customer = this.customerService.isAnExistingCustomer();
-   
+   console.log(this.customer);
   }
 
   addCustomerCart() {

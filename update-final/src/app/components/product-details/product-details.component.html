@@ -1,34 +1,59 @@
 
 
-
-<div *ngIf="currentBook">
-    <div class="product-preview">
-        <div class="thumbnail warpImg">
-            <img class="image" *ngIf="currentBook.imageLinks?currentBook.imageLinks.thumbnail:null" [src]='currentBook.imageLinks.thumbnail'>
-        </div>
-        <div class="product-paper">
+<div *ngIf="currentBook" class="component">
+    <div class="book">
+        <!-- Front -->
+        <ul class='hardcover_front'>
+            <li>
+                <img *ngIf="currentBook.imageLinks?currentBook.imageLinks.thumbnail:null" [src]='currentBook.imageLinks.thumbnail'
+                    alt="" width="100%" height="100%">
+                <span class="ribbon bestseller">NEW</span>
+            </li>
+            <li></li>
+        </ul>
+        <!-- Pages -->
+        <ul class='page'>
+            <li></li>
+            <li>
+                <a (click)="addCustomerCart()" *ngIf="customer" class="btn"> add to my Cart</a>
+                <span class="glyphicon glyphicon-shopping-cart"></span>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <!-- Back -->
+        <ul class='hardcover_back'>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul class='book_spine'>
+            <li>hyffffffffffffff</li>
+            <li>hghfffffffffffffff</li>
+        </ul>
+        <div class="figcaption">
             <div *ngIf="currentBook.title" class="product-name">
-                {{currentBook.title}}
+                <h1>
+                    {{currentBook.title}}
+                </h1>
             </div>
             <div *ngIf="currentBook.subtitle" class="product-price">
-                {{currentBook.subtitle}}
+                <span> {{currentBook.subtitle}} </span>
             </div>
             <div *ngIf="currentBook.language" class="product-name">
-                {{currentBook.language}}
+                <p> {{currentBook.language}} </p>
             </div>
             <div *ngIf="currentBook.pageCount" class="product-price">
-                {{currentBook.pageCount}}
+                <P> {{currentBook.pageCount}}</P>
             </div>
             <div *ngIf="currentBook.publishedDate" class="product-name">
-                    {{currentBook.publishedDate}}
+                <p>{{currentBook.publishedDate}}</p>
             </div>
             <div *ngIf="currentBook.publisher" class="product-name">
-                    {{currentBook.publisher}}
+                <p>{{currentBook.publisher}}</p>
             </div>
         </div>
-        <button type="button" (click)="addCustomerCart()" [disabled]="!customer"> <span class="glyphicon glyphicon-shopping-cart"></span>
-            add to my Cart</button>
-        <button type="button" (click)="backProductsPage()">back to all Products</button>
     </div>
-
 </div>
+
+<button type="button" (click)="backProductsPage()">back to all Products</button>

@@ -1,4 +1,4 @@
-
+.
 .warpImg{
     width: 20vw;
     height: 18vh;
@@ -150,9 +150,9 @@ img {
   }
 .glyphicon1 {
     font-size: 2vw;
-    position: absolute;
-    bottom: 4vh;
-    right: 2vw;
+    position: relative;
+    top: 0vh;
+    right: 1vw;
     font-family: 'Glyphicons Halflings';
     font-style: normal;
     -moz-osx-font-smoothing: grayscale;

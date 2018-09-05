@@ -1,7 +1,7 @@
 <nav>
     <ul class="font">
-        <li> <a class="font" [routerLink]="['login']"> login</a></li>
-        <li><a class="font" [routerLink]="['register']">register </a></li>
+        <li *ngIf="!currentCustomer">  <a class="font" [routerLink]="['login']"> login</a></li>
+        <li *ngIf="!currentCustomer"><a class="font" [routerLink]="['register']">register </a></li>
         <li *ngIf="currentCustomer"><a (click)="logoutCustomer()">logout</a></li>
     </ul>
 </nav>

@@ -2,6 +2,9 @@
 <div class="product-preview">
     <div class="thumbnail warpImg">
       <img class="image" *ngIf="currentBook.imageLinks?currentBook.imageLinks.thumbnail:null" [src]='currentBook.imageLinks.thumbnail'> 
+      <i class="icon-size"  (click)="clearSpecificBookOfCustomer()" title="deleate this order">
+        <span class="glyphicon1 glyphicon-trash icon-size"></span>
+    </i>
     </div>
     <div class="product-paper">
       <div *ngIf="currentBook.title" class="product-name">
