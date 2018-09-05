@@ -2,7 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.5.-client    +node js- server
  
-# This project books store use :
+# This project books store used :
 * local-storage
 * httpClient
 * cors
